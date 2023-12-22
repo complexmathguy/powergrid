@@ -92,7 +92,7 @@ jobs:
       
     steps:
       - *restore_repo
-      - setup_remote_docker
+      - setup_remote_docker:
           version: 20.10.14
       - run:
           name: creating docker image..considering using env vars DOCKER_USER and DOCKER_PASS
